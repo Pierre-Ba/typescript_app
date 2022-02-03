@@ -8,6 +8,7 @@ const calculator = (a: number, b: number, op: Operation): Result => {
             return a * b;
         case 'divide':
             if(b === 0) throw new Error('Can\'t divide by 0!');
+            return a / b;
         case 'add':
             return a + b;
         default:
@@ -24,3 +25,4 @@ try {
   }
   console.log(errorMessage);
 }
+
